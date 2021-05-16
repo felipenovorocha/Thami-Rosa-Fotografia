@@ -1,0 +1,237 @@
+:root {
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  //   --cor-principal: #ebd4e2;
+  --cor-principal: #ebd4e2;
+  --cor-secundaria: #bb7c99;
+  --cor-acento: #74485d;
+  --overlay: #ece6df;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  //   img {
+  // max-height: 100%;
+  //   }
+}
+
+section {
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 7rem;
+  margin-top: 5vh;
+  //   margin-bottom: 5vh;
+  font-weight: 500;
+  color: var(--cor-acento);
+  text-transform: uppercase;
+  text-align: center;
+}
+h2 {
+  font-size: 1.5rem;
+  font-weight: 1000;
+}
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+p {
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--cor-secundaria);
+}
+
+.separador {
+  margin-bottom: 5vh;
+  margin-top: 5vh;
+  background-color: var(--cor-secundaria);
+  height: 0.015vh;
+  width: 15vw;
+}
+
+// ==============================SEÇÕES==============================
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0vh 5vh 0px 5vh;
+  max-height: 30vh;
+  background-color: rgba($color: #ece6df, $alpha: 0.1);
+  backdrop-filter: blur(1px);
+  border: 1px solid rgba($color: #000000, $alpha: 0.03);
+  //   background-color: rgba(238, 227, 227, 0.12);
+  .logo {
+    img {
+      //   box-shadow: 0px 5px 10px 2px rgba($color: #000000, $alpha: 0.05);
+      //   box-shadow: 0px 10px 15px 15px rgba($color: #000000, $alpha: 0.1);
+      height: 15vh;
+    }
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    ul {
+      display: flex;
+      justify-content: space-around;
+      li {
+        list-style: none;
+        margin: 5vh;
+        a {
+          font-weight: 300;
+          text-transform: uppercase;
+          font-size: 1.5rem;
+          letter-spacing: 3px;
+          text-decoration: none;
+          color: var(--cor-secundaria);
+          font-weight: 300;
+          //   color: white;
+        }
+      }
+    }
+  }
+}
+
+header {
+  min-height: 100vh;
+  background-image: url(/img/Home/Maithe/Foto-13.jpg);
+  background-size: 100%;
+
+  background-repeat: no-repeat;
+  //   background-color: rgba($color: #e87bae, $alpha: 0.1);
+  background-color: rgba($color: #ece6df, $alpha: 0.12);
+  background-blend-mode: soft-light;
+}
+
+.sobre {
+  //   max-height: 100vh;
+  background-color: rgba($color: #ece6df, $alpha: 0.12);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    color: var(--cor-acento);
+    text-align: center;
+    // margin-top: 3vh;
+  }
+
+  p {
+    width: 80vw;
+    // margin-top: 10vh;
+    text-align: justify;
+  }
+}
+
+.portfolio {
+  background-color: rgba($color: #ece6df, $alpha: 0.22);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    text-align: center;
+  }
+
+  img {
+    // height: 300px;
+    width: 100%;
+    // object-fit: cover;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  }
+}
+
+.fale-conosco {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .fale-conosco-containe {
+    display: flex;
+    flex-direction: row;
+  }
+
+  img {
+    max-height: 50vh;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // background-color: blue;
+    width: 25vw;
+
+    label {
+      font-size: 1.8rem;
+      letter-spacing: 1.5px;
+      margin-bottom: 10px;
+    }
+
+    input {
+      max-width: 100%;
+      min-height: 3vh;
+    }
+    textarea {
+      display: block;
+      max-width: 100%;
+      min-height: 30vh;
+    }
+    button {
+      background-color: var(--cor-principal);
+      //   border: 0.05px solid var(--cor-acento);
+      border: none;
+      border-radius: 0.1rem;
+      margin-top: 2vh;
+      padding: 0.5rem;
+      font-size: 2rem;
+      color: var(--cor-acento);
+    }
+  }
+}
+
+footer {
+  background-color: rgba($color: #ece6df, $alpha: 0.22);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 50vh;
+
+  .redes-sociais {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+    h2 {
+      color: var(--cor-acento);
+      font-weight: 300;
+    }
+
+    ul {
+      list-style: none;
+      li {
+        margin: 1vh;
+        margin-left: 0vh;
+        i {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+  img {
+    max-height: 20vh;
+  }
+}
