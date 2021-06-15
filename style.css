@@ -1,3 +1,47 @@
+.ensaios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.ensaios .titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ensaios .fotos {
+  padding: 0 10vw;
+  gap: 1.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(770px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(770px, 1fr));
+}
+
+.ensaios img {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 :root {
   font-family: "Poppins", sans-serif;
   font-size: 10px;
@@ -122,11 +166,9 @@ nav .nav-links ul li a:hover {
 
 header {
   min-height: 100vh;
-  background-image: url(/img/Home/Maithe/Foto-13.jpg);
+  background-image: url(/img/Home/Maju/Foto-6.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
-  background-color: rgba(214, 214, 214, 0.055);
-  background-blend-mode: soft-light;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -227,6 +269,26 @@ header h2 {
   cursor: pointer;
 }
 
+.portfolio .grid a {
+  text-decoration: none;
+}
+
+.portfolio .grid a h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--cor-acento);
+  padding-bottom: 3rem;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+
+.portfolio .grid a h2:hover {
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+  font-weight: 500;
+}
+
 .fale-conosco {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -243,7 +305,7 @@ header h2 {
           align-items: center;
 }
 
-.fale-conosco .fale-conosco-containe {
+.fale-conosco .fale-conosco-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -333,6 +395,7 @@ footer .redes-sociais h2 {
   text-align: left;
   text-transform: uppercase;
   font-size: 2rem;
+  color: var(--cor-acento);
 }
 
 footer .redes-sociais a {
