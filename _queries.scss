@@ -1,5 +1,15 @@
 @media only screen and (max-width: 900px){
 
+section{
+    h1{
+
+        font-size: 1.8rem;
+    }
+    p{
+        font-size: 1.4rem;
+    }
+}
+
 
 nav{
 
@@ -9,12 +19,19 @@ nav{
    .nav-links{
 
        ul{
-           justify-content: space-around;
+        //    display: flex;
+        //    justify-content: center;
            
            li{
-               
-               
-            }
+               display: none;
+               a{
+                   font-size: 10px !important;
+                   margin:0;
+               }
+
+           }
+           
+          
             
         }
     }
@@ -23,12 +40,51 @@ nav{
 
 form{
 
-    min-width: 80vw;
+    min-width: 60vw;
 }
 
 .logo{
 
     padding-top: 3vh;
+}
+
+footer{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+    .contato, .contatos{
+        padding: 3vh;
+    }
+    
+    .redes-sociais{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .midias{
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+    }
+
+    .contato-lista{
+        text-align: center;
+    }
+    
+  
+    .selos{
+    
+        img{
+            max-width: 10vh;
+            padding: 4vh 0vh;
+            // display: none;
+        }
+    }
 }
 
 }
