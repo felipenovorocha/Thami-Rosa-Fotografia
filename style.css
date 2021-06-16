@@ -42,6 +42,28 @@
      object-fit: cover;
 }
 
+@media only screen and (max-width: 900px) {
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  nav .nav-links ul {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  form {
+    min-width: 80vw;
+  }
+  .logo {
+    padding-top: 3vh;
+  }
+}
+
 :root {
   font-family: "Poppins", sans-serif;
   font-size: 10px;
@@ -167,21 +189,9 @@ nav .nav-links ul li a:hover {
 header {
   min-height: 100vh;
   background-image: url(/img/Home/Maju/Foto-6.jpg);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  background-position: center center;
 }
 
 header h1 {
@@ -278,7 +288,7 @@ header h2 {
   font-weight: 400;
   text-transform: uppercase;
   color: var(--cor-acento);
-  padding-bottom: 3rem;
+  padding: 3rem 0;
   -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
 }
