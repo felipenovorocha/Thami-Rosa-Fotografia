@@ -8,6 +8,9 @@
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .ensaios .titulo {
@@ -31,8 +34,8 @@
   gap: 1.5rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(770px, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(770px, 1fr));
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
 .ensaios img {
@@ -307,6 +310,7 @@ header h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
 }
 
 .portfolio h1 {
@@ -321,8 +325,8 @@ header h2 {
   gap: 0.3rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(600px, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  -ms-grid-columns: (minmax(500px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
 }
 
 .portfolio .grid img {
@@ -472,7 +476,7 @@ footer .redes-sociais a {
 }
 
 footer .redes-sociais p {
-  font-size: 1.6rem;
+  font-size: clamp(1.2rem, 1.5vw, 1.5rem);
 }
 
 footer .redes-sociais ul {
@@ -492,7 +496,7 @@ footer .redes-sociais ul li {
 
 footer .redes-sociais ul li i {
   font-size: 2rem;
-  margin-right: 0.3vw;
+  margin-right: 0.7em;
 }
 
 footer img {

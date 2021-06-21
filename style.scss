@@ -176,6 +176,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 
   h1 {
     text-align: center;
@@ -184,6 +185,7 @@ header {
   img {
     // height: 300px;
     width: 100%;
+    
     // object-fit: cover;
   }
 
@@ -191,7 +193,7 @@ header {
     
     gap: 0.3rem;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
 
 img{
 
@@ -313,7 +315,7 @@ footer {
     }
 
     p{
-      font-size: 1.6rem;
+      font-size: clamp(1.2rem, 1.5vw, 1.5rem);
     }
 
     ul {
@@ -325,7 +327,7 @@ footer {
         margin-left: 0vh;
         i {
           font-size: 2rem;
-          margin-right: 0.3vw;
+          margin-right: 0.7em;
         }
       }
     }
